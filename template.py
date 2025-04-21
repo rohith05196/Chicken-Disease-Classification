@@ -15,6 +15,7 @@ list_of_base_files = [
     f"src/{project_name}/pipeline/__init__.py",
     f"src/{project_name}/entity/__init__.py",
     f"src/{project_name}/constants/__init__.py",
+    "templates/home.html",
     "config/config.yaml",
     "dvc.yaml",
     "params.yaml",
