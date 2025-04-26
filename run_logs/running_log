@@ -2,3 +2,83 @@
 [2025-04-25 20:53:08,769: INFO: test_run: lets get the party going]
 [2025-04-25 21:00:31,938: INFO: test_run: lets get the party going]
 [2025-04-26 11:32:41,549: INFO: test_run: lets get the party going]
+[2025-04-26 16:30:45,759: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-04-26 16:30:45,767: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-04-26 16:32:54,444: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-04-26 16:32:54,448: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-04-26 16:33:26,752: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-04-26 16:33:26,755: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-04-26 16:33:38,039: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-04-26 16:33:38,043: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-04-26 16:40:33,135: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-04-26 16:40:33,140: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-04-26 16:40:38,196: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-04-26 16:40:38,201: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-04-26 16:41:25,466: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-04-26 16:41:25,469: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-04-26 16:43:46,191: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-04-26 16:43:46,195: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-04-26 16:45:10,646: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-04-26 16:45:10,649: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-04-26 16:46:30,077: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-04-26 16:46:30,079: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-04-26 16:46:30,080: INFO: common_func: created directory at: artifacts]
+[2025-04-26 16:47:20,860: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-04-26 16:47:20,862: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-04-26 16:47:20,863: INFO: common_func: created directory at: artifacts]
+[2025-04-26 16:48:50,574: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-04-26 16:48:50,576: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-04-26 16:48:50,577: INFO: common_func: created directory at: artifacts]
+[2025-04-26 16:49:38,234: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-04-26 16:49:38,236: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-04-26 16:49:38,236: INFO: common_func: created directory at: artifacts]
+[2025-04-26 16:51:47,247: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-04-26 16:51:47,251: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-04-26 16:51:47,252: INFO: common_func: created directory at: artifacts]
+[2025-04-26 16:55:54,150: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-04-26 16:55:54,154: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-04-26 16:55:54,155: INFO: common_func: created directory at: artifacts]
+[2025-04-26 16:55:54,156: INFO: common_func: created directory at: artifacts/data_ingestion]
+[2025-04-26 16:58:01,163: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-04-26 16:58:01,167: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-04-26 16:58:01,169: INFO: common_func: created directory at: artifacts]
+[2025-04-26 16:58:01,169: INFO: common_func: created directory at: artifacts/data_ingestion]
+[2025-04-26 16:58:42,699: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-04-26 16:58:42,705: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-04-26 16:58:42,706: INFO: common_func: created directory at: artifacts]
+[2025-04-26 16:58:42,707: INFO: common_func: created directory at: artifacts/data_ingestion]
+[2025-04-26 17:00:27,073: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-04-26 17:00:27,077: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-04-26 17:00:27,080: INFO: common_func: created directory at: artifacts]
+[2025-04-26 17:00:27,080: INFO: common_func: created directory at: artifacts/data_ingestion]
+[2025-04-26 17:00:51,225: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-04-26 17:00:51,229: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-04-26 17:00:51,267: INFO: common_func: created directory at: artifacts]
+[2025-04-26 17:00:51,269: INFO: common_func: created directory at: artifacts/data_ingestion]
+[2025-04-26 17:00:54,014: INFO: 154209813: succesfully downloaded the zip artifacts/data_ingestion/data.zip with following info 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 85E5:5EF63:16A4B7B:1948A3E:680CF523
+Accept-Ranges: bytes
+Date: Sat, 26 Apr 2025 15:00:52 GMT
+Via: 1.1 varnish
+X-Served-By: cache-fra-etou8220174-FRA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1745679652.858839,VS0,VE397
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 809b3e13e20446288a7fb7ae1ccdfe8ad38e1f90
+Expires: Sat, 26 Apr 2025 15:05:52 GMT
+Source-Age: 0
+
+]
