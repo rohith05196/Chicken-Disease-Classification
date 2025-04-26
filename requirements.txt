@@ -6,11 +6,12 @@ matplotlib
 seaborn
 tensorflow
 pyYAML
-ensure == 1.0.2
+ensure
 joblib
-types-pyYAML
+types-PyYAML
 Flask
-Flask-Cors
+flask-Cors
 tqdm
-python-box == 6.0.2
+python-box
+scipy
 -e .
