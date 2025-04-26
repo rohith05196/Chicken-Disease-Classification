@@ -82,3 +82,62 @@ Expires: Sat, 26 Apr 2025 15:05:52 GMT
 Source-Age: 0
 
 ]
+[2025-04-26 23:04:48,532: INFO: test_run: Trying to copy data set: This is the Fzrst stage: data ingestion stay tuned and relax]
+[2025-04-26 23:04:48,534: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-04-26 23:04:48,536: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-04-26 23:04:48,536: INFO: common_func: created directory at: artifacts]
+[2025-04-26 23:04:48,536: INFO: common_func: created directory at: artifacts/data_ingestion]
+[2025-04-26 23:05:02,918: INFO: test_run: Trying to copy data set: This is the Fzrst stage: data ingestion stay tuned and relax]
+[2025-04-26 23:05:02,920: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-04-26 23:05:02,922: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-04-26 23:05:02,923: INFO: common_func: created directory at: artifacts]
+[2025-04-26 23:05:02,923: INFO: common_func: created directory at: artifacts/data_ingestion]
+[2025-04-26 23:05:02,923: ERROR: test_run: local variable 'filename' referenced before assignment]
+Traceback (most recent call last):
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/test_run.py", line 9, in <module>
+    pipeline.main()
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/src/clasifier_cnn/pipeline/stage01_data_ingestion.py", line 13, in main
+    data_ingestion.download_zip_file()
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/src/clasifier_cnn/components/data_ingestion.py", line 21, in download_zip_file
+    logger.info(f"The file {filename} already exists and the size is {get_size(Path(self.config.local_data_file))}")
+UnboundLocalError: local variable 'filename' referenced before assignment
+[2025-04-26 23:06:10,098: INFO: test_run: Trying to copy data set: This is the Fzrst stage: data ingestion stay tuned and relax]
+[2025-04-26 23:06:10,099: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-04-26 23:06:10,101: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-04-26 23:06:10,102: INFO: common_func: created directory at: artifacts]
+[2025-04-26 23:06:10,102: INFO: common_func: created directory at: artifacts/data_ingestion]
+[2025-04-26 23:06:10,102: INFO: data_ingestion: The file already exists and the size is  11345 KB]
+[2025-04-26 23:06:10,284: INFO: test_run: succefuly unziped the file and you are done with Fzrst stage: data ingestion]
+[2025-04-26 23:06:45,900: INFO: test_run: Trying to copy data set: This is the Fzrst stage: data ingestion stay tuned and relax]
+[2025-04-26 23:06:45,903: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-04-26 23:06:45,905: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-04-26 23:06:45,905: INFO: common_func: created directory at: artifacts]
+[2025-04-26 23:06:45,905: INFO: common_func: created directory at: artifacts/data_ingestion]
+[2025-04-26 23:06:48,572: INFO: data_ingestion: succesfully downloaded the zip artifacts/data_ingestion/data.zip with following info 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: E558:56E7B:1D766BA:20A77FD:680D4AE6
+Accept-Ranges: bytes
+Date: Sat, 26 Apr 2025 21:06:46 GMT
+Via: 1.1 varnish
+X-Served-By: cache-fra-eddf8230050-FRA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1745701606.402214,VS0,VE459
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 71d9dc4dfc3bc72526601b0cb5b4a13495822a22
+Expires: Sat, 26 Apr 2025 21:11:46 GMT
+Source-Age: 0
+
+]
+[2025-04-26 23:06:48,716: INFO: test_run: succefuly unziped the file and you are done with Fzrst stage: data ingestion]
