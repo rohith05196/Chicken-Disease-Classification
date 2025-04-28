@@ -174,3 +174,12 @@ Source-Age: 125
 
 ]
 [2025-04-26 23:08:53,601: INFO: test_run: succefuly unziped the file and you are done with Fzrst stage: data ingestion]
+[2025-04-28 22:51:41,244: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-04-28 22:51:41,269: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-04-28 22:51:41,277: INFO: common_func: created directory at: artifacts]
+[2025-04-28 22:52:56,579: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-04-28 22:52:56,584: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-04-28 22:52:56,589: INFO: common_func: created directory at: artifacts]
+[2025-04-28 22:52:56,591: INFO: common_func: created directory at: artifacts/prepare_base_model]
+[2025-04-28 22:53:20,506: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-28 22:53:20,726: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
