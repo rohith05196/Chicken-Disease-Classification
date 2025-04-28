@@ -141,3 +141,36 @@ Source-Age: 0
 
 ]
 [2025-04-26 23:06:48,716: INFO: test_run: succefuly unziped the file and you are done with Fzrst stage: data ingestion]
+[2025-04-26 23:08:51,395: INFO: test_run: Trying to copy data set: This is the Fzrst stage: data ingestion stay tuned and relax]
+[2025-04-26 23:08:51,398: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-04-26 23:08:51,401: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-04-26 23:08:51,401: INFO: common_func: created directory at: artifacts]
+[2025-04-26 23:08:51,402: INFO: common_func: created directory at: artifacts/data_ingestion]
+[2025-04-26 23:08:53,454: INFO: data_ingestion: succesfully downloaded the zip artifacts/data_ingestion/data.zip with following info 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: E558:56E7B:1D766BA:20A77FD:680D4AE6
+Accept-Ranges: bytes
+Date: Sat, 26 Apr 2025 21:08:51 GMT
+Via: 1.1 varnish
+X-Served-By: cache-fra-eddf8230148-FRA
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1745701732.787013,VS0,VE1
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 6ad43e014f00e2219f8ae925a75f61e8972383a1
+Expires: Sat, 26 Apr 2025 21:13:51 GMT
+Source-Age: 125
+
+]
+[2025-04-26 23:08:53,601: INFO: test_run: succefuly unziped the file and you are done with Fzrst stage: data ingestion]
