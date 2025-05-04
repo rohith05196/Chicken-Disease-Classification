@@ -183,3 +183,80 @@ Source-Age: 125
 [2025-04-28 22:52:56,591: INFO: common_func: created directory at: artifacts/prepare_base_model]
 [2025-04-28 22:53:20,506: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
 [2025-04-28 22:53:20,726: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-04 17:13:53,437: INFO: test_run: Trying to copy data set: This is the First stage: data ingestion stay tuned and relax]
+[2025-05-04 17:13:53,439: ERROR: test_run: DataIngwationPipeline.main() takes 0 positional arguments but 1 was given]
+Traceback (most recent call last):
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/test_run.py", line 10, in <module>
+    pipeline.main()
+TypeError: DataIngwationPipeline.main() takes 0 positional arguments but 1 was given
+[2025-05-04 17:14:51,748: INFO: test_run: Trying to copy data set: This is the First stage: data ingestion stay tuned and relax]
+[2025-05-04 17:14:51,750: ERROR: test_run: DataIngwationPipeline.main() takes 0 positional arguments but 1 was given]
+Traceback (most recent call last):
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/test_run.py", line 10, in <module>
+    pipeline.main()
+TypeError: DataIngwationPipeline.main() takes 0 positional arguments but 1 was given
+[2025-05-04 17:15:30,659: INFO: test_run: Trying to copy data set: This is the First stage: data ingestion stay tuned and relax]
+[2025-05-04 17:15:30,661: ERROR: test_run: DataIngwationPipeline.main() takes 0 positional arguments but 1 was given]
+Traceback (most recent call last):
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/test_run.py", line 10, in <module>
+    pipeline.main()
+TypeError: DataIngwationPipeline.main() takes 0 positional arguments but 1 was given
+[2025-05-04 17:18:59,848: INFO: test_run: Trying to copy data set: This is the First stage: data ingestion stay tuned and relax]
+[2025-05-04 17:18:59,851: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-05-04 17:18:59,853: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-05-04 17:18:59,854: INFO: common_func: created directory at: artifacts]
+[2025-05-04 17:18:59,854: ERROR: test_run: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config']
+Traceback (most recent call last):
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/test_run.py", line 10, in <module>
+    pipeline.main()
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/src/clasifier_cnn/pipeline/stage01_data_ingestion.py", line 11, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+AttributeError: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config'
+[2025-05-04 17:20:43,206: INFO: test_run: Trying to copy data set: This is the First stage: data ingestion stay tuned and relax]
+[2025-05-04 17:20:43,208: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-05-04 17:20:43,210: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-05-04 17:20:43,211: INFO: common_func: created directory at: artifacts]
+[2025-05-04 17:20:43,211: INFO: common_func: created directory at: artifacts/data_ingestion]
+[2025-05-04 17:20:46,462: INFO: data_ingestion: succesfully downloaded the zip artifacts/data_ingestion/data.zip with following info 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 9916:2E0CC7:2D5397E:3488AA4:681785CB
+Accept-Ranges: bytes
+Date: Sun, 04 May 2025 15:20:44 GMT
+Via: 1.1 varnish
+X-Served-By: cache-fra-eddf8230030-FRA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1746372044.003777,VS0,VE522
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 79322c6ec1e50a6d040cc2f7293a2a42b8f0b231
+Expires: Sun, 04 May 2025 15:25:44 GMT
+Source-Age: 0
+
+]
+[2025-05-04 17:20:46,567: INFO: test_run: succefuly unziped the file and you are done with First stage: data ingestion]
+[2025-05-04 17:22:40,678: INFO: test_run: Trying to copy data set: This is the First stage: data ingestion stay tuned and relax]
+[2025-05-04 17:22:40,679: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-05-04 17:22:40,681: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-05-04 17:22:40,682: INFO: common_func: created directory at: artifacts]
+[2025-05-04 17:22:40,682: INFO: common_func: created directory at: artifacts/data_ingestion]
+[2025-05-04 17:22:40,682: INFO: data_ingestion: The file already exists and the size is  11345 KB]
+[2025-05-04 17:22:40,813: INFO: test_run: succefuly unziped the file and you are done with First stage: data ingestion]
+[2025-05-04 17:22:40,813: INFO: test_run: Trying to copy data set: This is the First stage: data ingestion stay tuned and relax]
+[2025-05-04 17:22:40,815: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-05-04 17:22:40,815: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-05-04 17:22:40,815: INFO: common_func: created directory at: artifacts]
+[2025-05-04 17:22:40,815: INFO: common_func: created directory at: artifacts/prepare_base_model]
+[2025-05-04 17:22:41,126: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-04 17:22:41,281: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-04 17:22:41,452: INFO: test_run: succefuly unziped the file and you are done with First stage: data ingestion]
