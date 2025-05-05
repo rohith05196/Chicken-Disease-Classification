@@ -32,16 +32,6 @@ This repository presents a deep learning-based solution for detecting **Coccidio
 
 ---
 
-## 📸 Sample Images
-
-Healthy vs Coccidiosis-infected chicken fecal samples:
-
-| Healthy | Coccidiosis |
-|--------|-------------|
-| ![](https://i.imgur.com/xpUdfdx.jpg) | ![](https://i.imgur.com/7elPH5B.jpg) |
-
----
-
 ## ⚙️ Setup Instructions
 
 ### 1. Clone the Repository
