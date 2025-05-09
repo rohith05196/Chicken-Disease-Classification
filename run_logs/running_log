@@ -295,3 +295,191 @@ Source-Age: 0
 [2025-05-05 20:01:04,332: INFO: common_func: created directory at: artifacts]
 [2025-05-05 20:01:04,333: INFO: common_func: created directory at: artifacts/prepare_callbacks/checkpoint_dir]
 [2025-05-05 20:01:04,334: INFO: common_func: created directory at: artifacts/prepare_callbacks/tensorflow_log_dir]
+[2025-05-09 17:55:20,313: INFO: test_run: Trying to copy data set: This is the First stage: data ingestion stay tuned and relax]
+[2025-05-09 17:55:20,315: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-05-09 17:55:20,318: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-05-09 17:55:20,319: INFO: common_func: created directory at: artifacts]
+[2025-05-09 17:55:20,319: INFO: common_func: created directory at: artifacts/data_ingestion]
+[2025-05-09 17:55:20,319: INFO: data_ingestion: The file already exists and the size is  11345 KB]
+[2025-05-09 17:55:20,435: INFO: test_run: succefuly unziped the file and you are done with First stage: data ingestion]
+[2025-05-09 17:55:20,435: INFO: test_run: Trying to copy data set: This is the Second stage: Model Creation stay tuned and relax]
+[2025-05-09 17:55:20,436: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-05-09 17:55:20,436: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-05-09 17:55:20,437: INFO: common_func: created directory at: artifacts]
+[2025-05-09 17:55:20,437: INFO: common_func: created directory at: artifacts/prepare_base_model]
+[2025-05-09 17:55:20,738: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-09 17:55:20,878: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-09 17:55:21,065: INFO: test_run: succefuly unziped the file and you are done with Second stage: Model Creation]
+[2025-05-09 17:55:21,066: INFO: test_run: Trying to copy data set: This is the Third stage: Model Training stay tuned and relax]
+[2025-05-09 17:55:21,069: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-05-09 17:55:21,070: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-05-09 17:55:21,070: INFO: common_func: created directory at: artifacts]
+[2025-05-09 17:55:21,071: INFO: common_func: created directory at: artifacts/prepare_callbacks/checkpoint_dir]
+[2025-05-09 17:55:21,071: INFO: common_func: created directory at: artifacts/prepare_callbacks/tensorflow_log_dir]
+[2025-05-09 17:55:21,072: INFO: common_func: created directory at: artifacts/training]
+[2025-05-09 17:55:21,214: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-09 17:55:21,737: ERROR: test_run: numpy() is only available when eager execution is enabled.]
+Traceback (most recent call last):
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/test_run.py", line 38, in <module>
+    pipeline.main()
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/src/clasifier_cnn/pipeline/stage_03_training.py", line 22, in main
+    training.train(
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/src/clasifier_cnn/components/training.py", line 69, in train
+    self.model.fit(
+  File "/Users/rohithkamath/Documents/endtoendproject/chicken3/lib/python3.10/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/Users/rohithkamath/Documents/endtoendproject/chicken3/lib/python3.10/site-packages/keras/src/backend/tensorflow/core.py", line 158, in convert_to_numpy
+    return np.array(x)
+NotImplementedError: numpy() is only available when eager execution is enabled.
+[2025-05-09 17:57:47,496: INFO: test_run: Trying to copy data set: This is the First stage: data ingestion stay tuned and relax]
+[2025-05-09 17:57:47,498: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-05-09 17:57:47,499: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-05-09 17:57:47,499: INFO: common_func: created directory at: artifacts]
+[2025-05-09 17:57:47,499: INFO: common_func: created directory at: artifacts/data_ingestion]
+[2025-05-09 17:57:47,499: INFO: data_ingestion: The file already exists and the size is  11345 KB]
+[2025-05-09 17:57:47,594: INFO: test_run: succefuly unziped the file and you are done with First stage: data ingestion]
+[2025-05-09 17:57:47,594: INFO: test_run: Trying to copy data set: This is the Second stage: Model Creation stay tuned and relax]
+[2025-05-09 17:57:47,595: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-05-09 17:57:47,596: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-05-09 17:57:47,596: INFO: common_func: created directory at: artifacts]
+[2025-05-09 17:57:47,596: INFO: common_func: created directory at: artifacts/prepare_base_model]
+[2025-05-09 17:57:47,855: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-09 17:57:47,947: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-09 17:57:48,022: INFO: test_run: succefuly unziped the file and you are done with Second stage: Model Creation]
+[2025-05-09 17:57:48,022: INFO: test_run: Trying to copy data set: This is the Third stage: Model Training stay tuned and relax]
+[2025-05-09 17:57:48,024: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-05-09 17:57:48,026: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-05-09 17:57:48,026: INFO: common_func: created directory at: artifacts]
+[2025-05-09 17:57:48,026: INFO: common_func: created directory at: artifacts/prepare_callbacks/checkpoint_dir]
+[2025-05-09 17:57:48,027: INFO: common_func: created directory at: artifacts/prepare_callbacks/tensorflow_log_dir]
+[2025-05-09 17:57:48,027: INFO: common_func: created directory at: artifacts/training]
+[2025-05-09 17:57:48,241: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-09 17:57:55,139: ERROR: test_run: Unknown variable: <Variable path=dense/kernel, shape=(25088, 2), dtype=float32, value=[[ 0.011897   -0.00889055]
+ [-0.00879171  0.01049202]
+ [ 0.01110586  0.00455226]
+ ...
+ [-0.00044798  0.01047834]
+ [-0.00620989  0.0112009 ]
+ [ 0.00195403  0.00393406]]>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.]
+Traceback (most recent call last):
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/test_run.py", line 38, in <module>
+    pipeline.main()
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/src/clasifier_cnn/pipeline/stage_03_training.py", line 22, in main
+    training.train(
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/src/clasifier_cnn/components/training.py", line 70, in train
+    self.model.fit(
+  File "/Users/rohithkamath/Documents/endtoendproject/chicken3/lib/python3.10/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/Users/rohithkamath/Documents/endtoendproject/chicken3/lib/python3.10/site-packages/keras/src/optimizers/base_optimizer.py", line 329, in _check_variables_are_known
+    raise ValueError(
+ValueError: Unknown variable: <Variable path=dense/kernel, shape=(25088, 2), dtype=float32, value=[[ 0.011897   -0.00889055]
+ [-0.00879171  0.01049202]
+ [ 0.01110586  0.00455226]
+ ...
+ [-0.00044798  0.01047834]
+ [-0.00620989  0.0112009 ]
+ [ 0.00195403  0.00393406]]>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.
+[2025-05-09 17:59:03,599: INFO: test_run: Trying to copy data set: This is the First stage: data ingestion stay tuned and relax]
+[2025-05-09 17:59:03,602: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-05-09 17:59:03,604: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-05-09 17:59:03,605: INFO: common_func: created directory at: artifacts]
+[2025-05-09 17:59:03,605: INFO: common_func: created directory at: artifacts/data_ingestion]
+[2025-05-09 17:59:03,605: INFO: data_ingestion: The file already exists and the size is  11345 KB]
+[2025-05-09 17:59:03,705: INFO: test_run: succefuly unziped the file and you are done with First stage: data ingestion]
+[2025-05-09 17:59:03,705: INFO: test_run: Trying to copy data set: This is the Second stage: Model Creation stay tuned and relax]
+[2025-05-09 17:59:03,707: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-05-09 17:59:03,707: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-05-09 17:59:03,707: INFO: common_func: created directory at: artifacts]
+[2025-05-09 17:59:03,707: INFO: common_func: created directory at: artifacts/prepare_base_model]
+[2025-05-09 17:59:03,975: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-09 17:59:04,065: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-09 17:59:04,139: INFO: test_run: succefuly unziped the file and you are done with Second stage: Model Creation]
+[2025-05-09 17:59:04,140: INFO: test_run: Trying to copy data set: This is the Third stage: Model Training stay tuned and relax]
+[2025-05-09 17:59:04,142: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-05-09 17:59:04,142: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-05-09 17:59:04,143: INFO: common_func: created directory at: artifacts]
+[2025-05-09 17:59:04,145: INFO: common_func: created directory at: artifacts/prepare_callbacks/checkpoint_dir]
+[2025-05-09 17:59:04,146: INFO: common_func: created directory at: artifacts/prepare_callbacks/tensorflow_log_dir]
+[2025-05-09 17:59:04,147: INFO: common_func: created directory at: artifacts/training]
+[2025-05-09 17:59:04,356: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-09 17:59:44,102: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-09 17:59:44,210: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-09 17:59:44,291: INFO: test_run: succefuly unziped the file and you are done with Third stage: Model Training]
+[2025-05-09 18:01:01,855: INFO: test_run: Trying to copy data set: This is the First stage: data ingestion stay tuned and relax]
+[2025-05-09 18:01:01,858: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-05-09 18:01:01,860: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-05-09 18:01:01,861: INFO: common_func: created directory at: artifacts]
+[2025-05-09 18:01:01,861: INFO: common_func: created directory at: artifacts/data_ingestion]
+[2025-05-09 18:01:01,861: INFO: data_ingestion: The file already exists and the size is  11345 KB]
+[2025-05-09 18:01:01,960: INFO: test_run: succefuly unziped the file and you are done with First stage: data ingestion]
+[2025-05-09 18:01:01,960: INFO: test_run: Trying to copy data set: This is the Second stage: Model Creation stay tuned and relax]
+[2025-05-09 18:01:01,961: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-05-09 18:01:01,962: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-05-09 18:01:01,962: INFO: common_func: created directory at: artifacts]
+[2025-05-09 18:01:01,962: INFO: common_func: created directory at: artifacts/prepare_base_model]
+[2025-05-09 18:01:02,226: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-09 18:01:02,327: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-09 18:01:02,399: INFO: test_run: succefuly unziped the file and you are done with Second stage: Model Creation]
+[2025-05-09 18:01:02,399: INFO: test_run: Trying to copy data set: This is the Third stage: Model Training stay tuned and relax]
+[2025-05-09 18:01:02,401: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-05-09 18:01:02,403: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-05-09 18:01:02,404: INFO: common_func: created directory at: artifacts]
+[2025-05-09 18:01:02,404: INFO: common_func: created directory at: artifacts/prepare_callbacks/checkpoint_dir]
+[2025-05-09 18:01:02,404: INFO: common_func: created directory at: artifacts/prepare_callbacks/tensorflow_log_dir]
+[2025-05-09 18:01:02,404: INFO: common_func: created directory at: artifacts/training]
+[2025-05-09 18:01:02,568: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-09 18:01:48,589: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-09 18:01:48,715: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-09 18:01:48,835: INFO: test_run: succefuly unziped the file and you are done with Third stage: Model Training]
+[2025-05-09 18:07:09,648: INFO: test_run: Trying to copy data set: This is the First stage: data ingestion stay tuned and relax]
+[2025-05-09 18:07:09,652: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-05-09 18:07:09,654: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-05-09 18:07:09,654: INFO: common_func: created directory at: artifacts]
+[2025-05-09 18:07:09,654: INFO: common_func: created directory at: artifacts/data_ingestion]
+[2025-05-09 18:12:13,063: INFO: data_ingestion: succesfully downloaded the zip artifacts/data_ingestion/data.zip with following info 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 2333:1196:98F4:BEA0:681E2959
+Accept-Ranges: bytes
+Date: Fri, 09 May 2025 16:12:10 GMT
+Via: 1.1 varnish
+X-Served-By: cache-fra-etou8220108-FRA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1746807130.290741,VS0,VE545
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: c23b9d289768fb597cbc2dcdc571daebc3104309
+Expires: Fri, 09 May 2025 16:17:10 GMT
+Source-Age: 0
+
+]
+[2025-05-09 18:12:13,161: INFO: test_run: succefuly unziped the file and you are done with First stage: data ingestion]
+[2025-05-09 18:12:13,161: INFO: test_run: Trying to copy data set: This is the Second stage: Model Creation stay tuned and relax]
+[2025-05-09 18:12:13,164: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-05-09 18:12:13,167: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-05-09 18:12:13,169: INFO: common_func: created directory at: artifacts]
+[2025-05-09 18:12:13,169: INFO: common_func: created directory at: artifacts/prepare_base_model]
+[2025-05-09 18:12:13,692: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-09 18:12:13,807: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-09 18:12:13,881: INFO: test_run: succefuly unziped the file and you are done with Second stage: Model Creation]
+[2025-05-09 18:12:13,881: INFO: test_run: Trying to train the model: This is the Third stage: Model Training stay tuned and relax]
+[2025-05-09 18:12:13,883: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-05-09 18:12:13,883: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-05-09 18:12:13,883: INFO: common_func: created directory at: artifacts]
+[2025-05-09 18:12:13,884: INFO: common_func: created directory at: artifacts/prepare_callbacks/checkpoint_dir]
+[2025-05-09 18:12:13,884: INFO: common_func: created directory at: artifacts/prepare_callbacks/tensorflow_log_dir]
+[2025-05-09 18:12:13,884: INFO: common_func: created directory at: artifacts/training]
+[2025-05-09 18:12:13,964: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-09 18:12:57,444: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-09 18:12:57,533: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-09 18:12:57,601: INFO: test_run: succefuly finished training Third stage: Model Training]
