@@ -1,0 +1,19 @@
+schema: '2.0'
+stages:
+  data_ingestion:
+    cmd: python src/clasifier_cnn/pipeline/stage01_data_ingestion.py
+    deps:
+    - path: config/config.yaml
+      hash: md5
+      md5: ff49631b1dd77c9db4cd6acde9daa768
+      size: 780
+    - path: src/clasifier_cnn/pipeline/stage01_data_ingestion.py
+      hash: md5
+      md5: 20f5636717ca3e12450a2d06711e7b8d
+      size: 874
+    outs:
+    - path: artifacts/data_ingestion/Chicken-fecal-images
+      hash: md5
+      md5: 9e1f8dd2eae3c29e9d635df89d438ae4.dir
+      size: 12207807
+      nfiles: 390
