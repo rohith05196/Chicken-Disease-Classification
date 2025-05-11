@@ -63,3 +63,8 @@ def create_directories(path_to_directories: list, verbose=True):
         if verbose:
             logger.info(f"created directory at: {path}")
 
+def decodeImage(imgstring, fileName):
+    imgdata = base64.b64decode(imgstring)
+    with open(fileName, 'wb') as f:
+        f.write(imgdata)
+        f.close()

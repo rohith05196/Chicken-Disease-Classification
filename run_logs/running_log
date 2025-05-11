@@ -835,3 +835,400 @@ x==========x]
 [2025-05-11 10:53:45,353: INFO: evaluation: >>>>>> stage Fourth Stage completed <<<<<<
 
 x==========x]
+[2025-05-11 15:30:55,152: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.1.7:80]
+[2025-05-11 15:30:55,156: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-05-11 15:31:05,230: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:31:05] "GET / HTTP/1.1" 200 -]
+[2025-05-11 15:31:14,609: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:31:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2025-05-11 15:32:46,294: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 15:32:46,305: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/Users/rohithkamath/Documents/endtoendproject/chicken3/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/rohithkamath/Documents/endtoendproject/chicken3/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/rohithkamath/Documents/endtoendproject/chicken3/lib/python3.10/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/rohithkamath/Documents/endtoendproject/chicken3/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/rohithkamath/Documents/endtoendproject/chicken3/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/rohithkamath/Documents/endtoendproject/chicken3/lib/python3.10/site-packages/flask_cors/decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/app.py", line 40, in predictRoute
+    result = clApp.classifier.predict()
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/src/clasifier_cnn/pipeline/prediction.py", line 16, in predict
+    image_input = image.load_image(input_image, target_size = (224,224))
+AttributeError: module 'keras._tf_keras.keras.preprocessing.image' has no attribute 'load_image'. Did you mean: 'load_img'?
+[2025-05-11 15:32:46,344: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:32:46] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-05-11 15:33:14,629: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:33:14] "GET / HTTP/1.1" 200 -]
+[2025-05-11 15:33:40,650: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 15:33:40,656: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/Users/rohithkamath/Documents/endtoendproject/chicken3/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/rohithkamath/Documents/endtoendproject/chicken3/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/rohithkamath/Documents/endtoendproject/chicken3/lib/python3.10/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/rohithkamath/Documents/endtoendproject/chicken3/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/rohithkamath/Documents/endtoendproject/chicken3/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/rohithkamath/Documents/endtoendproject/chicken3/lib/python3.10/site-packages/flask_cors/decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/app.py", line 40, in predictRoute
+    result = clApp.classifier.predict()
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/src/clasifier_cnn/pipeline/prediction.py", line 16, in predict
+    image_input = image.load_img(input_image, target_size = (224,224))
+AttributeError: module 'keras._tf_keras.keras.preprocessing.image' has no attribute 'load_image'. Did you mean: 'load_img'?
+[2025-05-11 15:33:40,660: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:33:40] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-05-11 15:33:57,079: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:33:57] "GET / HTTP/1.1" 200 -]
+[2025-05-11 15:34:27,710: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.1.7:80]
+[2025-05-11 15:34:27,712: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-05-11 15:34:30,996: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:34:30] "GET / HTTP/1.1" 200 -]
+[2025-05-11 15:34:37,265: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 15:34:37,713: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:34:37] "POST /predict HTTP/1.1" 200 -]
+[2025-05-11 15:34:52,775: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 15:34:53,005: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:34:53] "POST /predict HTTP/1.1" 200 -]
+[2025-05-11 15:34:57,060: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 15:34:57,260: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:34:57] "POST /predict HTTP/1.1" 200 -]
+[2025-05-11 15:35:03,480: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 15:35:03,688: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:35:03] "POST /predict HTTP/1.1" 200 -]
+[2025-05-11 15:35:06,666: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:35:06] "GET / HTTP/1.1" 200 -]
+[2025-05-11 15:35:12,359: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 15:35:12,615: WARNING: polymorphic_function: 5 out of the last 5 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x157f22170> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2025-05-11 15:35:12,632: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:35:12] "POST /predict HTTP/1.1" 200 -]
+[2025-05-11 15:35:37,027: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 15:35:37,243: WARNING: polymorphic_function: 6 out of the last 6 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x168e42dd0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2025-05-11 15:35:37,253: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:35:37] "POST /predict HTTP/1.1" 200 -]
+[2025-05-11 15:35:53,535: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.1.7:80]
+[2025-05-11 15:35:53,536: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-05-11 15:35:57,496: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:35:57] "GET / HTTP/1.1" 200 -]
+[2025-05-11 15:36:03,135: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 15:36:03,537: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:36:03] "POST /predict HTTP/1.1" 200 -]
+[2025-05-11 15:37:20,430: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.1.7:80]
+[2025-05-11 15:37:20,431: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-05-11 15:37:26,675: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:37:26] "GET / HTTP/1.1" 200 -]
+[2025-05-11 15:37:32,523: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 15:37:32,951: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:37:32] "POST /predict HTTP/1.1" 200 -]
+[2025-05-11 15:38:25,147: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:38:25] "GET / HTTP/1.1" 200 -]
+[2025-05-11 15:38:29,630: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 15:38:30,615: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/Users/rohithkamath/Documents/endtoendproject/chicken3/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/rohithkamath/Documents/endtoendproject/chicken3/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/rohithkamath/Documents/endtoendproject/chicken3/lib/python3.10/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/rohithkamath/Documents/endtoendproject/chicken3/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/rohithkamath/Documents/endtoendproject/chicken3/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/rohithkamath/Documents/endtoendproject/chicken3/lib/python3.10/site-packages/flask_cors/decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/app.py", line 40, in predictRoute
+    result = clApp.classifier.predict()
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/src/clasifier_cnn/pipeline/prediction.py", line 16, in predict
+    image_input = image.load_img(input_image, target_size = (224,224))
+  File "/Users/rohithkamath/Documents/endtoendproject/chicken3/lib/python3.10/site-packages/keras/src/utils/image_utils.py", line 236, in load_img
+    img = pil_image.open(io.BytesIO(f.read()))
+  File "/Users/rohithkamath/Documents/endtoendproject/chicken3/lib/python3.10/site-packages/PIL/Image.py", line 3572, in open
+    raise UnidentifiedImageError(msg)
+PIL.UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x122613380>
+[2025-05-11 15:38:30,623: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:38:30] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-05-11 15:40:21,123: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.1.7:80]
+[2025-05-11 15:40:21,123: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-05-11 15:40:28,067: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:40:28] "GET / HTTP/1.1" 200 -]
+[2025-05-11 15:40:33,536: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 15:40:33,972: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:40:33] "POST /predict HTTP/1.1" 200 -]
+[2025-05-11 15:40:48,623: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:40:48] "GET /train HTTP/1.1" 200 -]
+[2025-05-11 15:41:11,888: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:41:11] "GET /train HTTP/1.1" 200 -]
+[2025-05-11 15:41:12,230: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:41:12] "GET / HTTP/1.1" 200 -]
+[2025-05-11 15:41:16,305: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:41:16] "[31m[1mGET /predict HTTP/1.1[0m" 405 -]
+[2025-05-11 15:42:26,320: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.1.7:80]
+[2025-05-11 15:42:26,321: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-05-11 15:42:39,258: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:42:39] "GET / HTTP/1.1" 200 -]
+[2025-05-11 15:42:45,305: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 15:42:45,676: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:42:45] "POST /predict HTTP/1.1" 200 -]
+[2025-05-11 15:42:57,129: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 15:42:57,361: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:42:57] "POST /predict HTTP/1.1" 200 -]
+[2025-05-11 15:43:00,267: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:43:00] "[31m[1mGET /predict HTTP/1.1[0m" 405 -]
+[2025-05-11 15:43:48,115: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:43:48] "GET /train HTTP/1.1" 200 -]
+[2025-05-11 15:43:51,140: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:43:51] "GET / HTTP/1.1" 200 -]
+[2025-05-11 15:43:59,483: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 15:43:59,819: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:43:59] "POST /predict HTTP/1.1" 200 -]
+[2025-05-11 15:46:09,577: INFO: stage01_data_ingestion: >>>>>> stage First Stage started <<<<<<]
+[2025-05-11 15:46:09,580: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-05-11 15:46:09,582: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-05-11 15:46:09,583: INFO: common_func: created directory at: artifacts]
+[2025-05-11 15:46:09,583: INFO: common_func: created directory at: artifacts/data_ingestion]
+[2025-05-11 15:46:09,583: INFO: data_ingestion: The file already exists and the size is  11345 KB]
+[2025-05-11 15:46:09,671: INFO: stage01_data_ingestion: >>>>>> stage First Stage completed <<<<<<
+
+x==========x]
+[2025-05-11 15:46:14,641: INFO: stage_02_prepare_base_model: >>>>>> stage Second Stage started <<<<<<]
+[2025-05-11 15:46:14,642: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-05-11 15:46:14,643: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-05-11 15:46:14,643: INFO: common_func: created directory at: artifacts]
+[2025-05-11 15:46:14,643: INFO: common_func: created directory at: artifacts/prepare_base_model]
+[2025-05-11 15:46:14,951: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-11 15:46:15,044: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-11 15:46:15,130: INFO: stage_02_prepare_base_model: >>>>>> stage Second Stage completed <<<<<<
+
+x==========x]
+[2025-05-11 15:46:20,048: INFO: stage_03_training: >>>>>> stage Third Stage started <<<<<<]
+[2025-05-11 15:46:20,049: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-05-11 15:46:20,050: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-05-11 15:46:20,050: INFO: common_func: created directory at: artifacts]
+[2025-05-11 15:46:20,050: INFO: common_func: created directory at: artifacts/prepare_callbacks/checkpoint_dir]
+[2025-05-11 15:46:20,050: INFO: common_func: created directory at: artifacts/prepare_callbacks/tensorflow_log_dir]
+[2025-05-11 15:46:20,050: INFO: common_func: created directory at: artifacts/training]
+[2025-05-11 15:46:20,192: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 15:46:20,564: ERROR: stage_03_training: numpy() is only available when eager execution is enabled.]
+Traceback (most recent call last):
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/src/clasifier_cnn/pipeline/stage_03_training.py", line 35, in <module>
+    obj.main()
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/src/clasifier_cnn/pipeline/stage_03_training.py", line 23, in main
+    training.train(
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/src/clasifier_cnn/components/training.py", line 69, in train
+    self.model.fit(
+  File "/Users/rohithkamath/Documents/endtoendproject/chicken3/lib/python3.10/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/Users/rohithkamath/Documents/endtoendproject/chicken3/lib/python3.10/site-packages/keras/src/backend/tensorflow/core.py", line 158, in convert_to_numpy
+    return np.array(x)
+NotImplementedError: numpy() is only available when eager execution is enabled.
+[2025-05-11 15:47:36,220: INFO: stage_03_training: >>>>>> stage Third Stage started <<<<<<]
+[2025-05-11 15:47:36,225: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-05-11 15:47:36,228: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-05-11 15:47:36,229: INFO: common_func: created directory at: artifacts]
+[2025-05-11 15:47:36,229: INFO: common_func: created directory at: artifacts/prepare_callbacks/checkpoint_dir]
+[2025-05-11 15:47:36,229: INFO: common_func: created directory at: artifacts/prepare_callbacks/tensorflow_log_dir]
+[2025-05-11 15:47:36,229: INFO: common_func: created directory at: artifacts/training]
+[2025-05-11 15:47:36,419: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 15:47:36,769: ERROR: stage_03_training: numpy() is only available when eager execution is enabled.]
+Traceback (most recent call last):
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/src/clasifier_cnn/pipeline/stage_03_training.py", line 35, in <module>
+    obj.main()
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/src/clasifier_cnn/pipeline/stage_03_training.py", line 23, in main
+    training.train(
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/src/clasifier_cnn/components/training.py", line 72, in train
+    self.model.fit(
+  File "/Users/rohithkamath/Documents/endtoendproject/chicken3/lib/python3.10/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/Users/rohithkamath/Documents/endtoendproject/chicken3/lib/python3.10/site-packages/keras/src/backend/tensorflow/core.py", line 158, in convert_to_numpy
+    return np.array(x)
+NotImplementedError: numpy() is only available when eager execution is enabled.
+[2025-05-11 15:48:06,441: INFO: stage_03_training: >>>>>> stage Third Stage started <<<<<<]
+[2025-05-11 15:48:06,445: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-05-11 15:48:06,447: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-05-11 15:48:06,448: INFO: common_func: created directory at: artifacts]
+[2025-05-11 15:48:06,448: INFO: common_func: created directory at: artifacts/prepare_callbacks/checkpoint_dir]
+[2025-05-11 15:48:06,448: INFO: common_func: created directory at: artifacts/prepare_callbacks/tensorflow_log_dir]
+[2025-05-11 15:48:06,448: INFO: common_func: created directory at: artifacts/training]
+[2025-05-11 15:48:06,632: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 15:48:06,990: ERROR: stage_03_training: numpy() is only available when eager execution is enabled.]
+Traceback (most recent call last):
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/src/clasifier_cnn/pipeline/stage_03_training.py", line 35, in <module>
+    obj.main()
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/src/clasifier_cnn/pipeline/stage_03_training.py", line 23, in main
+    training.train(
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/src/clasifier_cnn/components/training.py", line 72, in train
+    self.model.fit(
+  File "/Users/rohithkamath/Documents/endtoendproject/chicken3/lib/python3.10/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/Users/rohithkamath/Documents/endtoendproject/chicken3/lib/python3.10/site-packages/keras/src/backend/tensorflow/core.py", line 158, in convert_to_numpy
+    return np.array(x)
+NotImplementedError: numpy() is only available when eager execution is enabled.
+[2025-05-11 15:48:38,538: INFO: stage_03_training: >>>>>> stage Third Stage started <<<<<<]
+[2025-05-11 15:48:38,541: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-05-11 15:48:38,543: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-05-11 15:48:38,544: INFO: common_func: created directory at: artifacts]
+[2025-05-11 15:48:38,544: INFO: common_func: created directory at: artifacts/prepare_callbacks/checkpoint_dir]
+[2025-05-11 15:48:38,544: INFO: common_func: created directory at: artifacts/prepare_callbacks/tensorflow_log_dir]
+[2025-05-11 15:48:38,544: INFO: common_func: created directory at: artifacts/training]
+[2025-05-11 15:48:38,716: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 15:48:39,058: ERROR: stage_03_training: numpy() is only available when eager execution is enabled.]
+Traceback (most recent call last):
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/src/clasifier_cnn/pipeline/stage_03_training.py", line 35, in <module>
+    obj.main()
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/src/clasifier_cnn/pipeline/stage_03_training.py", line 23, in main
+    training.train(
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/src/clasifier_cnn/components/training.py", line 73, in train
+    self.model.fit(
+  File "/Users/rohithkamath/Documents/endtoendproject/chicken3/lib/python3.10/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/Users/rohithkamath/Documents/endtoendproject/chicken3/lib/python3.10/site-packages/keras/src/backend/tensorflow/core.py", line 158, in convert_to_numpy
+    return np.array(x)
+NotImplementedError: numpy() is only available when eager execution is enabled.
+[2025-05-11 15:49:08,584: INFO: stage_03_training: >>>>>> stage Third Stage started <<<<<<]
+[2025-05-11 15:49:08,586: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-05-11 15:49:08,588: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-05-11 15:49:08,589: INFO: common_func: created directory at: artifacts]
+[2025-05-11 15:49:08,589: INFO: common_func: created directory at: artifacts/prepare_callbacks/checkpoint_dir]
+[2025-05-11 15:49:08,589: INFO: common_func: created directory at: artifacts/prepare_callbacks/tensorflow_log_dir]
+[2025-05-11 15:49:08,589: INFO: common_func: created directory at: artifacts/training]
+[2025-05-11 15:49:08,762: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 15:49:09,129: ERROR: stage_03_training: numpy() is only available when eager execution is enabled.]
+Traceback (most recent call last):
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/src/clasifier_cnn/pipeline/stage_03_training.py", line 35, in <module>
+    obj.main()
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/src/clasifier_cnn/pipeline/stage_03_training.py", line 23, in main
+    training.train(
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/src/clasifier_cnn/components/training.py", line 73, in train
+    self.model.fit(
+  File "/Users/rohithkamath/Documents/endtoendproject/chicken3/lib/python3.10/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/Users/rohithkamath/Documents/endtoendproject/chicken3/lib/python3.10/site-packages/keras/src/backend/tensorflow/core.py", line 158, in convert_to_numpy
+    return np.array(x)
+NotImplementedError: numpy() is only available when eager execution is enabled.
+[2025-05-11 15:50:16,463: INFO: stage_03_training: >>>>>> stage Third Stage started <<<<<<]
+[2025-05-11 15:50:16,467: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-05-11 15:50:16,469: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-05-11 15:50:16,470: INFO: common_func: created directory at: artifacts]
+[2025-05-11 15:50:16,470: INFO: common_func: created directory at: artifacts/prepare_callbacks/checkpoint_dir]
+[2025-05-11 15:50:16,470: INFO: common_func: created directory at: artifacts/prepare_callbacks/tensorflow_log_dir]
+[2025-05-11 15:50:16,470: INFO: common_func: created directory at: artifacts/training]
+[2025-05-11 15:50:16,670: ERROR: stage_03_training: You must call `compile()` before using the model.]
+Traceback (most recent call last):
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/src/clasifier_cnn/pipeline/stage_03_training.py", line 35, in <module>
+    obj.main()
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/src/clasifier_cnn/pipeline/stage_03_training.py", line 23, in main
+    training.train(
+  File "/Users/rohithkamath/Documents/endtoendproject/Chicken-Disease-Classification/src/clasifier_cnn/components/training.py", line 73, in train
+    self.model.fit(
+  File "/Users/rohithkamath/Documents/endtoendproject/chicken3/lib/python3.10/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/Users/rohithkamath/Documents/endtoendproject/chicken3/lib/python3.10/site-packages/keras/src/trainers/trainer.py", line 1049, in _assert_compile_called
+    raise ValueError(msg)
+ValueError: You must call `compile()` before using the model.
+[2025-05-11 15:51:51,023: INFO: stage_03_training: >>>>>> stage Third Stage started <<<<<<]
+[2025-05-11 15:51:51,032: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-05-11 15:51:51,034: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-05-11 15:51:51,035: INFO: common_func: created directory at: artifacts]
+[2025-05-11 15:51:51,036: INFO: common_func: created directory at: artifacts/prepare_callbacks/checkpoint_dir]
+[2025-05-11 15:51:51,036: INFO: common_func: created directory at: artifacts/prepare_callbacks/tensorflow_log_dir]
+[2025-05-11 15:51:51,036: INFO: common_func: created directory at: artifacts/training]
+[2025-05-11 15:54:41,590: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-11 15:54:41,846: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-11 15:54:42,024: INFO: stage_03_training: >>>>>> stage Third Stage completed <<<<<<
+
+x==========x]
+[2025-05-11 15:54:49,405: INFO: evaluation: *******************]
+[2025-05-11 15:54:49,405: INFO: evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-05-11 15:54:49,408: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-05-11 15:54:49,409: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-05-11 15:54:49,410: INFO: common_func: created directory at: artifacts]
+[2025-05-11 15:54:49,630: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 15:55:06,126: INFO: common_func: json file saved at the location: scores.json]
+[2025-05-11 15:55:06,126: INFO: evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-05-11 15:55:06,126: INFO: evaluation: >>>>>> stage Fourth Stage started <<<<<<]
+[2025-05-11 15:55:06,129: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-05-11 15:55:06,130: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-05-11 15:55:06,130: INFO: common_func: created directory at: artifacts]
+[2025-05-11 15:55:06,266: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 15:55:24,816: INFO: common_func: json file saved at the location: scores.json]
+[2025-05-11 15:55:24,818: INFO: evaluation: >>>>>> stage Fourth Stage completed <<<<<<
+
+x==========x]
+[2025-05-11 15:55:46,606: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.1.7:80]
+[2025-05-11 15:55:46,611: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-05-11 15:55:58,597: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:55:58] "GET / HTTP/1.1" 200 -]
+[2025-05-11 15:56:04,494: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 15:56:04,970: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:56:04] "POST /predict HTTP/1.1" 200 -]
+[2025-05-11 15:56:33,026: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:56:33] "GET / HTTP/1.1" 200 -]
+[2025-05-11 15:56:38,689: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 15:56:39,067: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:56:39] "POST /predict HTTP/1.1" 200 -]
+[2025-05-11 15:58:15,383: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 15:58:15,842: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:58:15] "POST /predict HTTP/1.1" 200 -]
+[2025-05-11 15:58:25,607: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 15:58:25,925: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:58:25] "POST /predict HTTP/1.1" 200 -]
+[2025-05-11 15:58:37,940: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 15:58:38,162: WARNING: polymorphic_function: 5 out of the last 5 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x14fa58820> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2025-05-11 15:58:38,172: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:58:38] "POST /predict HTTP/1.1" 200 -]
+[2025-05-11 15:58:39,527: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 15:58:39,743: WARNING: polymorphic_function: 6 out of the last 6 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x14fabdb40> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2025-05-11 15:58:39,762: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:58:39] "POST /predict HTTP/1.1" 200 -]
+[2025-05-11 15:58:49,704: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 15:58:49,930: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:58:49] "POST /predict HTTP/1.1" 200 -]
+[2025-05-11 15:58:53,371: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:58:53] "GET / HTTP/1.1" 200 -]
+[2025-05-11 15:59:19,603: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.1.7:80]
+[2025-05-11 15:59:19,604: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-05-11 15:59:25,958: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:59:25] "GET / HTTP/1.1" 200 -]
+[2025-05-11 15:59:31,488: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 15:59:31,936: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:59:31] "POST /predict HTTP/1.1" 200 -]
+[2025-05-11 15:59:39,713: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 15:59:39,959: INFO: _internal: 127.0.0.1 - - [11/May/2025 15:59:39] "POST /predict HTTP/1.1" 200 -]
+[2025-05-11 16:02:09,466: INFO: stage_03_training: >>>>>> stage Third Stage started <<<<<<]
+[2025-05-11 16:02:09,474: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-05-11 16:02:09,476: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-05-11 16:02:09,478: INFO: common_func: created directory at: artifacts]
+[2025-05-11 16:02:09,478: INFO: common_func: created directory at: artifacts/prepare_callbacks/checkpoint_dir]
+[2025-05-11 16:02:09,478: INFO: common_func: created directory at: artifacts/prepare_callbacks/tensorflow_log_dir]
+[2025-05-11 16:02:09,478: INFO: common_func: created directory at: artifacts/training]
+[2025-05-11 16:05:08,066: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-11 16:08:33,889: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-11 16:11:59,807: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-11 16:12:00,066: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-11 16:12:00,246: INFO: stage_03_training: >>>>>> stage Third Stage completed <<<<<<
+
+x==========x]
+[2025-05-11 16:12:07,224: INFO: evaluation: *******************]
+[2025-05-11 16:12:07,224: INFO: evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-05-11 16:12:07,226: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-05-11 16:12:07,229: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-05-11 16:12:07,230: INFO: common_func: created directory at: artifacts]
+[2025-05-11 16:12:07,508: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 16:12:28,078: INFO: common_func: json file saved at the location: scores.json]
+[2025-05-11 16:12:28,080: INFO: evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-05-11 16:12:28,080: INFO: evaluation: >>>>>> stage Fourth Stage started <<<<<<]
+[2025-05-11 16:12:28,085: INFO: common_func: Yaml file: config/config.yaml has been loaded succesfully]
+[2025-05-11 16:12:28,087: INFO: common_func: Yaml file: params.yaml has been loaded succesfully]
+[2025-05-11 16:12:28,087: INFO: common_func: created directory at: artifacts]
+[2025-05-11 16:12:28,266: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 16:12:49,007: INFO: common_func: json file saved at the location: scores.json]
+[2025-05-11 16:12:49,008: INFO: evaluation: >>>>>> stage Fourth Stage completed <<<<<<
+
+x==========x]
+[2025-05-11 16:13:04,861: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.1.7:80]
+[2025-05-11 16:13:04,861: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-05-11 16:13:11,955: INFO: _internal: 127.0.0.1 - - [11/May/2025 16:13:11] "GET / HTTP/1.1" 200 -]
+[2025-05-11 16:13:23,043: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 16:13:23,624: INFO: _internal: 127.0.0.1 - - [11/May/2025 16:13:23] "POST /predict HTTP/1.1" 200 -]
+[2025-05-11 16:13:40,152: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 16:13:40,403: INFO: _internal: 127.0.0.1 - - [11/May/2025 16:13:40] "POST /predict HTTP/1.1" 200 -]
+[2025-05-11 16:13:52,385: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 16:13:52,709: INFO: _internal: 127.0.0.1 - - [11/May/2025 16:13:52] "POST /predict HTTP/1.1" 200 -]
+[2025-05-11 16:14:06,235: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-11 16:14:06,455: INFO: _internal: 127.0.0.1 - - [11/May/2025 16:14:06] "POST /predict HTTP/1.1" 200 -]

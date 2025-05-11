@@ -9,7 +9,7 @@ class Training:
 
     def get_base_model(self):
         self.model = tf.keras.models.load_model(
-            self.config.updated_base_model_path
+            self.config.updated_base_model_path, compile = False
         )
 
     def train_valid_generator(self):
@@ -67,8 +67,8 @@ class Training:
         self.model.compile(
         optimizer=Adam(learning_rate=0.001),
         loss='categorical_crossentropy',
-        metrics=['accuracy']
-        
+        metrics=['accuracy'],
+        run_eagerly = True
         )
         
         self.model.fit(
