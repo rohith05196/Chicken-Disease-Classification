@@ -1,6 +1,7 @@
 from clasifier_cnn.config.configuration import ConfigurationManager
 from clasifier_cnn.components.prepare_callbacks import PrepareCallbacks
 from clasifier_cnn.components.training import Training
+from clasifier_cnn import logger
 
 
 STAGE_NAME = "Training"
@@ -22,3 +23,18 @@ class TrainingPipeline:
        training.train(
             callback_list=callback_list
         )
+       
+if __name__ == '__main__':
+
+    STAGE_NAME = "Third Stage"
+
+    try:
+        
+        logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+        obj = TrainingPipeline()
+        obj.main()
+        logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+    
+    except Exception as e:
+        logger.exception(e)
+        raise e
